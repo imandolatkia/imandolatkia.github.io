@@ -1,334 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Iman Dolatkia Resume-CV">
+    <meta name="author" content="Iman Dolatkia">
+    <title>Resume - Iman Dolatkia</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box
+      }
 
-<head>
+      .mySlides {
+        display: none
+      }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Iman Dolatkia Resume-CV">
-  <meta name="author" content="Iman Dolatkia">
+      img {
+        vertical-align: middle;
+      }
 
-  <title>Resume - Iman Dolatkia</title>
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 350px;
+        position: relative;
+        margin: auto;
+      }
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
-  <style>
-    * {box-sizing: border-box}
-    .mySlides {display: none}
-    img {vertical-align: middle;}
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 350px;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-    
-      background: rgba(0, 0, 0, 0.15);
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 3px;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: -43px;
-    }
-    
-    .prev {
-      left: -43px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.4);
-    }
-    
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: rgba(187, 187, 187, 0.15);
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: rgba(189 93 56);
-    }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-device-width: 768px) {
-        .next {
-      right: 0;
-    }
-    
-    .prev {
-      left: 0;
-    }
-    
-    .slideshow-container {
-      max-width: 300px;
-    }
-    }
-    
-    @media only screen and (max-width: 410px) {
-      .prev, .next,.text {font-size: 11px}
+      /* Next & previous buttons */
+      .prev,
       .next {
-      right: 0;
-    }
-    
-    .prev {
-      left: 0;
-    }
-    
-    }
+        background: rgba(189, 93, 56, 0.20);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 3px;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: -43px;
+      }
+
+      .prev {
+        left: -43px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(189, 93, 56, 0.60);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: rgba(187, 187, 187, 0.15);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: rgba(189 93 56);
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-device-width: 768px) {
+        .next {
+          right: 0;
+        }
+
+        .prev {
+          left: 0;
+        }
+
+        .slideshow-container {
+          max-width: 300px;
+        }
+      }
+
+      @media only screen and (max-width: 410px) {
+
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+
+        .next {
+          right: 0;
+        }
+
+        .prev {
+          left: 0;
+        }
+      }
     </style>
-
-</head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Behzad Khosravifar</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#open-source">Open Source</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#publication">Publication</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Iman
-          <span class="text-primary">Dolatkia</span>
-        </h1>
-        <div class="subheading mb-5">+989124869956 .
-          <a href="mailto:iman.dolatkia@gmail.com">iman.dolatkia@gmail.com</a>
-        </div>
-        <p class="lead mb-5">
-          Senior Android Developer with +8 years of experience in designing, developing,<br> and delivering user-centric software applications with +5.4m users.<br>
-          Proficient in Java, Kotlin, and android SDK. 
-        </p>
-        
-        <div class="social-icons">
-          <a style="      width: auto;          height: auto;          border-radius: 80px; padding: 0 15px 0 15px; margin-bottom: 20px;" href="https://www.linkedin.com/in/imandolatkia/" target="_blank">
-            Downloas My CV
-          </a>
-
-          <a href="https://www.linkedin.com/in/imandolatkia/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/imandolatkia" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://t.me/iman_dolatkia" target="_blank">
-            <i class="fab fa-telegram"></i>
-          </a>
-          <a href="https://wa.me/+989124869956" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-        <br/>
-        <!-- <div>
-          <a title="Click to copy wallet address" href="javascript:navigator.clipboard.writeText('14Jrnp54wMyDZmuw48Cyuh62cBL7mRMe1Y').then(()=> alert('Bitcoin wallet address copied!'));">	
-            <img src="https://img.shields.io/badge/donate-Bitcoin-gold.svg" />
-          </a>
-          <a title="Click to copy wallet address" href="javascript:navigator.clipboard.writeText('0x67B424124460a1673bFaF3c3Ebf6d780d97df8De').then(()=> alert('Tether wallet address copied!'));">	
-            <img src="https://img.shields.io/badge/donate-Tether-green.svg" />
-          </a>
-          <a title="Click to copy wallet address" href="javascript:navigator.clipboard.writeText('0x67B424124460a1673bFaF3c3Ebf6d780d97df8De').then(()=> alert('Ether wallet address copied!'));">	
-            <img src="https://img.shields.io/badge/donate-Ether-slategray.svg" />
-          </a>
-        </div> -->
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Iman Dolatkia</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#open-source">Open Source</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publication">Publication</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Senior Windows Developer</h3>
-            <div class="subheading mb-3"><a href="https://taaghche.com" target="_blank">Taaghche, Tehran, Iran</a></div>
-            <p>Taaghche is a famous Persian bookstore with +3M local users and +100K books. screenshots, download.
-
-              <li>
-                Designed the architecture and developed it from the beginning. Using Java & Kotlin.
-              </li>
-
-              <li>
-                Increased crash-free users to 99.4% by bug troubleshooting and creating a release pipeline.
-              </li>
-
-              <li>
-                Designed the new UI/UX of the app that increased 20% profit.
-              </li>
-
-              <li>
-                Developed complex and unique custom views and animations.
-              </li>
-
-              <li>
-                Created a High performance, full-featured, encrypted ePUB reader.
-              </li>
-
-              <li>
-                Developed a full-featured, encrypted audiobook player.
-              </li>
-
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Worked on the iOS app for about a year, using Objective-C & Swift.
-              </li>
+    </nav>
+    <div class="container-fluid p-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+        <div class="w-100">
+          <h1 class="mb-0">Iman <span class="text-primary">Dolatkia</span>
+          </h1>
+          <div class="subheading mb-5">+989124869956 . <a href="mailto:iman.dolatkia@gmail.com">iman.dolatkia@gmail.com</a>
+          </div>
+          <p class="lead mb-5"> Senior Android Developer with +8 years of experience in designing, developing, <br> and delivering user-centric software applications with +5.4m users. <br> Proficient in Java, Kotlin, and android SDK. </p>
+          <div class="social-icons">
+            <a style="      width: auto;          height: auto;          border-radius: 80px; padding: 0 15px 0 15px; margin-bottom: 20px;" href="https://www.linkedin.com/in/imandolatkia/" target="_blank"> Downloas My CV </a>
+            <a href="https://www.linkedin.com/in/imandolatkia/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/imandolatkia" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://t.me/iman_dolatkia" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://wa.me/+989124869956" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <br />
+          <!-- <div><a title="Click to copy wallet address" href="javascript:navigator.clipboard.writeText('14Jrnp54wMyDZmuw48Cyuh62cBL7mRMe1Y').then(()=> alert('Bitcoin wallet address copied!'));"><img src="https://img.shields.io/badge/donate-Bitcoin-gold.svg" /></a><a title="Click to copy wallet address" href="javascript:navigator.clipboard.writeText('0x67B424124460a1673bFaF3c3Ebf6d780d97df8De').then(()=> alert('Tether wallet address copied!'));"><img src="https://img.shields.io/badge/donate-Tether-green.svg" /></a><a title="Click to copy wallet address" href="javascript:navigator.clipboard.writeText('0x67B424124460a1673bFaF3c3Ebf6d780d97df8De').then(()=> alert('Ether wallet address copied!'));"><img src="https://img.shields.io/badge/donate-Ether-slategray.svg" /></a></div> -->
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+        <div class="w-100">
+          <h2 class="mb-5">Experience</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Senior Windows Developer</h3>
+              <div class="subheading mb-3">
+                <a href="https://taaghche.com" target="_blank">Taaghche, Tehran, Iran</a>
+              </div>
+              <p>Taaghche is a famous Persian bookstore with +3M local users and +100K books. screenshots, download. <li> Designed the architecture and developed it from the beginning. Using Java & Kotlin. </li>
+                <li> Increased crash-free users to 99.4% by bug troubleshooting and creating a release pipeline. </li>
+                <li> Designed the new UI/UX of the app that increased 20% profit. </li>
+                <li> Developed complex and unique custom views and animations. </li>
+                <li> Created a High performance, full-featured, encrypted ePUB reader. </li>
+                <li> Developed a full-featured, encrypted audiobook player. </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i> Worked on the iOS app for about a year, using Objective-C & Swift.
+                </li>
               </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">DEC 2014 - PRESENT (7 years)</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">DEC 2014 - PRESENT (7 years)</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Owner & Unity Developer</h3>
-            <div class="subheading mb-3"> <a href="https://taaghche.com" target="_blank">Boom Boom, Tehran, Iran</a></div>
-            <p>
-              I created an independent game to play with Persian kinds of music named
-              “Boom boom”, with more than +1.5M downloads from all over the world.
-              <li>Did initial ideation, game design, and ad design.</li>
-              <li>Designed architecture and developed it from the beginning. Using C# & Unity.</li>
-                          </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">JUL 2017 - PRESENT (4 years) . Part-time</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Android Developer</h3>
-            <div class="subheading mb-3"><a href="https://shoniz.com/en/" target="_blank">Hasin Hamrah, Tehran, Iran</a></div>
-            <p>
-              <li>Developed an Android app with Java that increases sim cards credit, named “Charger” with +800K users.</li>
-              <li>Developed an Android App with Java for dieting, named “Salemsho”. With +60K users.</li>
-              <li>Developed an Android app With Java to pay the bills with QR code. With +1K users.</li>
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">DEC 2013 - DEC 2014 (1 years)</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Developer</h3>
-            <div class="subheading mb-3">FreeLancer, Tehran, Iran</div>
-            <p>
-              <li>Created an Android currency price application for “Artin exchange", using java.</li>
-              <li>Create a factory warehousing system for “Ahoora co”, using Java.</li>
-
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Owner & Unity Developer</h3>
+              <div class="subheading mb-3">
+                <a href="https://taaghche.com" target="_blank">Boom Boom, Tehran, Iran</a>
+              </div>
+              <p> I created an independent game to play with Persian kinds of music named “Boom boom”, with more than +1.5M downloads from all over the world. <li>Did initial ideation, game design, and ad design.</li>
+                <li>Designed architecture and developed it from the beginning. Using C# & Unity.</li>
               </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">JUL 2017 - PRESENT (4 years) . Part-time</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">DEC 2012 - DEC 2013 (1 years)</span>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Android Developer</h3>
+              <div class="subheading mb-3">
+                <a href="https://shoniz.com/en/" target="_blank">Hasin Hamrah, Tehran, Iran</a>
+              </div>
+              <p>
+                <li>Developed an Android app with Java that increases sim cards credit, named “Charger” with +800K users.</li>
+                <li>Developed an Android App with Java for dieting, named “Salemsho”. With +60K users.</li>
+                <li>Developed an Android app With Java to pay the bills with QR code. With +1K users.</li>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">DEC 2013 - DEC 2014 (1 years)</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">Junior Developer</h3>
+              <div class="subheading mb-3">FreeLancer, Tehran, Iran</div>
+              <p>
+                <li>Created an Android currency price application for “Artin exchange", using java.</li>
+                <li>Create a factory warehousing system for “Ahoora co”, using Java.</li>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">DEC 2012 - DEC 2013 (1 years)</span>
+            </div>
           </div>
         </div>
-
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="open-source">
-      <div class="w-100">
-        <h2 class="mb-5">OPEN SOURCE PROJECTS</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">
-              <a href="https://github.com/imandolatkia/Android-Animated-Theme-Manager" target="_blank">Android Animated Theme Manager</a>
-            </h3>
-            <div class="subheading mb-3">280+ stars</div>
-           <p>
-            Create custom themes and change them dynamically with the ripple animation
-            <!-- support java and kotlin projects.
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="open-source">
+        <div class="w-100">
+          <h2 class="mb-5">OPEN SOURCE PROJECTS</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">
+                <a href="https://github.com/imandolatkia/Android-Animated-Theme-Manager" target="_blank">Android Animated Theme Manager</a>
+              </h3>
+              <div class="subheading mb-3">280+ stars</div>
+              <p> Create custom themes and change them dynamically with the ripple animation
+                <!-- support java and kotlin projects.
             change theme without recreating activities and fragments.
             support multi fragments apps.
             ripple animation.
@@ -339,294 +293,232 @@
             observe changes of themes for custom actions with Livedata.
             easy to use, 5 or 7 tiny steps.
             support any android APIs (animation works on API>20). -->
-           </p>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">
-              <a href="https://github.com/imandolatkia/FullScreenCardViewPager_Android" target="_blank">FullScreenCardViewPager for Android</a>
-            </h3>
-            <div class="subheading mb-3">90+ stars</div>
-           <p>
-            Endless full-screen card ViewPager inspired by apple iBook for Android.
-           </p>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-
-    
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-<li>Java, Kotlin, C#, Unity</li>
-<li>Git</li>
-<li>SQL, Realm, SQLight</li>
-<li>Retrofit, Gson, Json</li>
-<li>Service, AsyncTask, WorkManager</li>
-<li>Jira, scrum</li>
-<li>Design patterns, Clean Code</li>
-<li>MVVM, MVM, MVC</li>
-<li>Glide, Picasso</li>
-<li>Dagger2</li>
-<li>Firebase, appmetrica, appcenter</li>
-<li>RxJava, LiveData</li>
-<li>Layout Optimization</li>
-<li>Layout Performance</li>
-<li>Complex Animation & UI</li>
-<li>Proguard rules, encryption</li>
-<li>CICD, Gitlab CI</li>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">
-              University of Science and Culture
-            </h3>
-            <div class="subheading mb-3">Tehran, Iran — Master's degree, Computer Software Engineering</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2013 - December 2015</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Imam Khomeini International University</h3>
-            <div class="">Tehran, Iran — Engineer’s Degree, Computer Software Engineering</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2009 - July 2013</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publication">
-      <div class="w-100">
-        <h2 class="mb-5">PUBLICATION</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">
-              <a href="https://ieeexplore.ieee.org/document/7498454" target="_blank">Music recommendation system based on the continuous combination of contextual information</a>
-            </h3>
-            <div class="subheading mb-3">IEEE - 2016 Second International Conference on Web Research (ICWR)</div>
-            <div>
-              With the progress of technology in music players, especially in intelligent cell phones, users have access to large archives. Quick and easy selecting favorite music among these large archives becomes one of the biggest problems for users. For example, selecting music in a silent forest is different from a crowded street or feelings for listening to music in a morning of a working day is different from an afternoon of a holiday. In this paper, a system has been designed that it collects users' context information such as weather, temperature, geographical position, etc., and according to a weighted combination of them, it recommends an appropriate music that is a user's favorite at the moment. Thus, this system includes a rating method that determines how close are music's context, which have been played before, in the moment's context and recommend the music that has the most closeness. The result of this research shows that recommendations that this system makes in different conditions, is closed to the user's choice.
+              </p>
             </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">2016 </span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">
-              <a href="https://medwelljournals.com/abstract/?doi=jeasci.2017.840.847" target="_blank">Appropriate Context for Context Aware Music Recommendation</a>
-            </h3>
-            <div class="subheading mb-3">Journal of Engineering and Applied Sciences</div>
-            <div>
-              There are various environmental factors that impact on selection of appropriate music. For example, selection of music in a foggy mountain is totally different with music selections in traffic jam or human sensation for listening to music on a weekend morning is extremely different with a research day’s afternoon. In this study, context information which can impact on user’s choices is evaluated through psychology of music inclinations, context information used in related researches and studies and also smartphones limitations and entirely most appropriate scheme will be offered. Particularly, these context information can be used in all context aware music recommendations. Finally, adopted experiments reveals that recommendations which apply these context information are acceptably similar to user’s selection in all circumstances.
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">
+                <a href="https://github.com/imandolatkia/FullScreenCardViewPager_Android" target="_blank">FullScreenCardViewPager for Android</a>
+              </h3>
+              <div class="subheading mb-3">90+ stars</div>
+              <p> Endless full-screen card ViewPager inspired by apple iBook for Android. </p>
             </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">2017</span>
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+        <div class="w-100">
+          <h2 class="mb-5">Skills</h2>
+          <li>Java, Kotlin, C#, Unity</li>
+          <li>Git</li>
+          <li>SQL, Realm, SQLight</li>
+          <li>Retrofit, Gson, Json</li>
+          <li>Service, AsyncTask, WorkManager</li>
+          <li>Jira, scrum</li>
+          <li>Design patterns, Clean Code</li>
+          <li>MVVM, MVM, MVC</li>
+          <li>Glide, Picasso</li>
+          <li>Dagger2</li>
+          <li>Firebase, appmetrica, appcenter</li>
+          <li>RxJava, LiveData</li>
+          <li>Layout Optimization</li>
+          <li>Layout Performance</li>
+          <li>Complex Animation & UI</li>
+          <li>Proguard rules, encryption</li>
+          <li>CICD, Gitlab CI</li>
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+        <div class="w-100">
+          <h2 class="mb-5">Education</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0"> University of Science and Culture </h3>
+              <div class="subheading mb-3">Tehran, Iran — Master's degree, Computer Software Engineering</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2013 - December 2015</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">Imam Khomeini International University</h3>
+              <div class="">Tehran, Iran — Engineer’s Degree, Computer Software Engineering</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2009 - July 2013</span>
+            </div>
           </div>
         </div>
-
-      </div>
-    </section>
-    <hr class="m-0">
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="gallery">
-      <div class="w-100">
-        <h2 class="mb-5">GALLERY</h2>
-        <h3 class="mb-0" id="taaghche-screenshots">
-          Taaghche Screenshots
-        </h3>
-
-        <div class="slideshow-container">
-
-          <div class="mySlides">
-            <img src="images/1.jpg" style="width:100%">
+      </section>
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publication">
+        <div class="w-100">
+          <h2 class="mb-5">PUBLICATION</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">
+                <a href="https://ieeexplore.ieee.org/document/7498454" target="_blank">Music recommendation system based on the continuous combination of contextual information</a>
+              </h3>
+              <div class="subheading mb-3">IEEE - 2016 Second International Conference on Web Research (ICWR)</div>
+              <div> With the progress of technology in music players, especially in intelligent cell phones, users have access to large archives. Quick and easy selecting favorite music among these large archives becomes one of the biggest problems for users. For example, selecting music in a silent forest is different from a crowded street or feelings for listening to music in a morning of a working day is different from an afternoon of a holiday. In this paper, a system has been designed that it collects users' context information such as weather, temperature, geographical position, etc., and according to a weighted combination of them, it recommends an appropriate music that is a user's favorite at the moment. Thus, this system includes a rating method that determines how close are music's context, which have been played before, in the moment's context and recommend the music that has the most closeness. The result of this research shows that recommendations that this system makes in different conditions, is closed to the user's choice. </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2016 </span>
+            </div>
           </div>
-          
-          <div class="mySlides">
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">
+                <a href="https://medwelljournals.com/abstract/?doi=jeasci.2017.840.847" target="_blank">Appropriate Context for Context Aware Music Recommendation</a>
+              </h3>
+              <div class="subheading mb-3">Journal of Engineering and Applied Sciences</div>
+              <div> There are various environmental factors that impact on selection of appropriate music. For example, selection of music in a foggy mountain is totally different with music selections in traffic jam or human sensation for listening to music on a weekend morning is extremely different with a research day’s afternoon. In this study, context information which can impact on user’s choices is evaluated through psychology of music inclinations, context information used in related researches and studies and also smartphones limitations and entirely most appropriate scheme will be offered. Particularly, these context information can be used in all context aware music recommendations. Finally, adopted experiments reveals that recommendations which apply these context information are acceptably similar to user’s selection in all circumstances. </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2017</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0">
+      <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="gallery">
+        <div class="w-100">
+          <h2 class="mb-5">GALLERY (TAAGHCHE SCREENSHOTS)</h2>
+          <!-- <h3 class="mb-0" id="taaghche-screenshots"> Taaghche Screenshots </h3> -->
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="images/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
               <img src="images/2.jpg" style="width:100%">
             </div>
-          
             <div class="mySlides">
               <img src="images/3.jpg" style="width:100%">
             </div>
-          
             <div class="mySlides">
               <img src="images/3-5.jpg" style="width:100%">
             </div>
-            
             <div class="mySlides">
-                <img src="images/4.jpg" style="width:100%">
-              </div>
-            
-              <div class="mySlides">
-                <img src="images/5.jpg" style="width:100%">
-              </div>
-          
-              <div class="mySlides">
-                  <img src="images/6.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides">
-                    <img src="images/7.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides">
-                    <img src="images/8.jpg" style="width:100%">
-                  </div>
-          
-                  <div class="mySlides">
-                      <img src="images/9.jpg" style="width:100%">
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="images/10.jpg" style="width:100%">
-                      </div>
-                    
-                      <div class="mySlides">
-                        <img src="images/11.jpg" style="width:100%">
-                      </div>
-          
-                      <div class="mySlides">
-                          <img src="images/12.jpg" style="width:100%">
-                        </div>
-                        
-                        <div class="mySlides">
-                            <img src="images/13.jpg" style="width:100%">
-                          </div>
-                        
-                          <div class="mySlides">
-                            <img src="images/14.jpg" style="width:100%">
-                          </div>
-          
-                          <div class="mySlides">
-                              <img src="images/15.jpg" style="width:100%">
-                            </div>
-                            
-                            <div class="mySlides">
-                                <img src="images/16.jpg" style="width:100%">
-                              </div>
-                            
-                              <div class="mySlides">
-                                <img src="images/17.jpg" style="width:100%">
-                              </div>
-                              <div class="mySlides">
-                                  <img src="images/18.jpg" style="width:100%">
-                                </div>
-                                
-                                <div class="mySlides">
-                                    <img src="images/19.jpg" style="width:100%">
-                                  </div>
-                                
-          <!-- <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="a.png" style="width:100%">
-            <div class="text">Caption Three</div>
-          </div> -->
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
+              <img src="images/4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/11.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/12.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/13.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/14.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/15.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/16.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/17.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/18.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <img src="images/19.jpg" style="width:100%">
+            </div>
+            <!-- <div class="mySlides fade"><div class="numbertext">3 / 3</div><img src="a.png" style="width:100%"><div class="text">Caption Three</div></div> -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
-          
           <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            <span class="dot" onclick="currentSlide(6)"></span> 
-            <span class="dot" onclick="currentSlide(7)"></span> 
-            <span class="dot" onclick="currentSlide(8)"></span> 
-            <span class="dot" onclick="currentSlide(9)"></span> 
-            <span class="dot" onclick="currentSlide(10)"></span> 
-            <span class="dot" onclick="currentSlide(11)"></span> 
-            <span class="dot" onclick="currentSlide(12)"></span> 
-            <span class="dot" onclick="currentSlide(13)"></span> 
-            <span class="dot" onclick="currentSlide(14)"></span> 
-            <span class="dot" onclick="currentSlide(15)"></span> 
-            <span class="dot" onclick="currentSlide(16)"></span> 
-            <span class="dot" onclick="currentSlide(17)"></span> 
-            <span class="dot" onclick="currentSlide(18)"></span> 
-            <span class="dot" onclick="currentSlide(19)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
+            <span class="dot" onclick="currentSlide(17)"></span>
+            <span class="dot" onclick="currentSlide(18)"></span>
+            <span class="dot" onclick="currentSlide(19)"></span>
           </div>
-
-          <h3 class="mb-0">
-            Taaghche Analytics
-          </h3>
-          
+          <!-- <h3 class="mb-0"> Taaghche Analytics </h3> -->
           <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
             }
-            for (i = 0; i < dots.length; i++) {
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1
+              }
+              if (n < 1) {
+                slideIndex = slides.length
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
             }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
           </script>
-
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-</body>
-
+        </div>
+      </section>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+  </body>
 </html>
